@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&family=Poppins:ital,wght@0,300;0,600;1,400;1,600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("https://jooinn.com/images/blurred-leaves-4.jpg");
+    font-family:  'Mukta', sans-serif;
+}
+
+
+.cantainer{
+    display: flex;
+    width: 90%;
+    margin:60px auto;
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+.flex{
+    width: 25%;
+    padding: 15px;
+    background-color: rgb(253, 253, 253);
+
+}
+img{
+    width: 100%;
+}
+.text h1{
+    color: rgb(236, 206, 35);
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.text p{
+    padding: 6px 12px;
+    font-size: 17px;
+    color: #777;
+}
+    
+
+
+.text{
+    text-align: center;
+    margin: 30px  auto 0;
+}
+
+@media only screen and (max-width:1120px) {
+    .flex{
+        width: 100%;
+        display: flex;
+        border-top:10px solid black ;
+        border-bottom:10px solid black ;
+    }
+    .flex .img{
+        width: 50%;
+        
+    }
+    .flex .text{
+        width: 50%;
+    }
+    .flex:nth-child(2n+1) .img{
+        transform: translateX(100%);
+    }
+    .flex:nth-child(2n+1) .text{
+        transform: translateX(-100%);
+
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .flex{
+        width: 100%;
+        display: block;
+    }
+    .flex .img{
+        width: 100%;
+        
+    }
+    .flex .text{
+        width: 100%;}
+
+    .flex:nth-child(2n+1) .img{
+        transform: translateX(0%);
+    }
+    .flex:nth-child(2n+1) .text{
+        transform: translateX(0%);
+
+    }
+}
+.abs{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color: red;
+    opacity: 0.01;
+    animation-name: abs;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    
+}
+
+.abs img{
+    width: 60px;
+}
+.abs h2{
+    font-size: 40px;
+    margin-top:50px ;
+    font-family: cursive;
+}
+@keyframes abs{
+    25% {opacity: 0.2;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.8;}
+    100% {opacity: 1;}
+
+}
