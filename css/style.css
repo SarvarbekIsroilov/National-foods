@@ -4,14 +4,11 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
 }
 body{
     background-image: url("https://jooinn.com/images/blurred-leaves-4.jpg");
     font-family:  'Mukta', sans-serif;
 }
-
-
 .cantainer{
     display: flex;
     width: 90%;
@@ -23,7 +20,6 @@ body{
     width: 25%;
     padding: 15px;
     background-color: rgb(253, 253, 253);
-
 }
 img{
     width: 100%;
@@ -38,9 +34,6 @@ img{
     font-size: 17px;
     color: #777;
 }
-    
-
-
 .text{
     text-align: center;
     margin: 30px  auto 0;
@@ -55,7 +48,6 @@ img{
     }
     .flex .img{
         width: 50%;
-        
     }
     .flex .text{
         width: 50%;
@@ -65,7 +57,6 @@ img{
     }
     .flex:nth-child(2n+1) .text{
         transform: translateX(-100%);
-
     }
 }
 
@@ -104,7 +95,6 @@ img{
     animation-iteration-count: 1;
     
 }
-
 .abs img{
     width: 60px;
 }
@@ -118,5 +108,4 @@ img{
     50% {opacity: 0.5;}
     75% {opacity: 0.8;}
     100% {opacity: 1;}
-
 }
