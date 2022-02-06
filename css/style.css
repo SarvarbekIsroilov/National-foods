@@ -116,7 +116,8 @@ img{
     color: white;
     text-align: center;
 }
-.footer p{
+.footer p,
+.footer h4{
     padding: 18px;
-    float: right;
+    /* float: right; */
 }
